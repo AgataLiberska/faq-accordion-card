@@ -1,26 +1,78 @@
 .card {
+    position: relative;
+    max-width: 20.4375rem;
+    margin: 0 1.5rem;
+    background-color: white;
+    padding: 3rem 1.5rem;
+    border-radius: 1.25rem;
 
 
     &__cover {
 
     }
 
-    &__title {
-
+    &__heading {
+        text-align: center;
     }
 
-    &__faq {
+    &__accordion {
 
 
-        &__pair {
+        &__item {
+            border-bottom: 1px solid $lightGrayishBlue;
+            
+            &:not(:last-child) {
+                margin-bottom: 1rem;
+            }
+            
+            
+            &__title {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-bottom: 0.875rem;
+                transition: all 200ms ease-in-out;
 
+                .toggle{
+                    display: inline-block;
+                    text-align: center;
+                    vertical-align: middle;
+                    
+                }
 
-            &__q {
-
+                &:hover {
+                    color: $softRed;
+                    cursor: pointer;
+                }
             }
 
-            &__a {
+
+
+            &__content {
+                max-height: 0;
+                overflow: hidden;
+            }
+
+            &.open { 
+
+                .card__accordion__item__title {
+                    font-weight: 700;
+
+                    .toggle {
+                        
+                        transform: rotate(180deg);
+                    }
+                }
+            
+
+
+
+                .card__accordion__item__content {
+                    padding-bottom: 1.25rem;
+                    max-height: max-content;
+                }
                 
+
             }
         }
     }

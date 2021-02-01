@@ -33,4 +33,72 @@ body {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.card {
+  position: relative;
+  max-width: 20.4375rem;
+  margin: 0 1.5rem;
+  background-color: white;
+  padding: 3rem 1.5rem;
+  border-radius: 1.25rem;
+}
+
+.card__heading {
+  text-align: center;
+}
+
+.card__accordion__item {
+  border-bottom: 1px solid #e7e7e9;
+}
+
+.card__accordion__item:not(:last-child) {
+  margin-bottom: 1rem;
+}
+
+.card__accordion__item__title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 0.875rem;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.card__accordion__item__title .toggle {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.card__accordion__item__title:hover {
+  color: #f47c57;
+  cursor: pointer;
+}
+
+.card__accordion__item__content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.card__accordion__item.open .card__accordion__item__title {
+  font-weight: 700;
+}
+
+.card__accordion__item.open .card__accordion__item__title .toggle {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.card__accordion__item.open .card__accordion__item__content {
+  padding-bottom: 1.25rem;
+  max-height: -webkit-max-content;
+  max-height: -moz-max-content;
+  max-height: max-content;
+}
 /*# sourceMappingURL=styles.css.map */
