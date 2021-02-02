@@ -8,10 +8,13 @@
 
 
     &__cover {
-
+        height: 6.25rem;
     }
 
     &__heading {
+        margin: 0;
+        padding-bottom: 2.25rem;
+        font-size: $font-lg;
         text-align: center;
     }
 
@@ -51,7 +54,7 @@
             &__content {
                 max-height: 0;
                 overflow: hidden;
-                transition: all 300ms ease-in-out;
+                transition: all 300ms linear;
             }
 
             &.open { 
