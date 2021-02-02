@@ -66,14 +66,18 @@ body {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 0.875rem;
-  -webkit-transition: all 200ms ease-in-out;
-  transition: all 200ms ease-in-out;
+  -webkit-transition: color 200ms ease-in-out, font-weight 300ms ease-in-out;
+  transition: color 200ms ease-in-out, font-weight 300ms ease-in-out;
 }
 
 .card__accordion__item__title .toggle {
   display: inline-block;
   text-align: center;
   vertical-align: middle;
+  -webkit-transition: -webkit-transform 300ms ease-in-out;
+  transition: -webkit-transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out;
+  transition: transform 300ms ease-in-out, -webkit-transform 300ms ease-in-out;
 }
 
 .card__accordion__item__title:hover {
@@ -84,6 +88,8 @@ body {
 .card__accordion__item__content {
   max-height: 0;
   overflow: hidden;
+  -webkit-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out;
 }
 
 .card__accordion__item.open .card__accordion__item__title {
