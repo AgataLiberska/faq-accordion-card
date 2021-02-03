@@ -5,8 +5,9 @@
     background-color: white;
     padding: 2.375rem 1.5rem 3rem 1.5rem;
     border-radius: 1.25rem;
-    
-
+    box-shadow: 
+        0 2.5rem 2.8125rem -1.875rem rgba(0, 0, 0, 0.14), 
+        0 3.625rem 3.125rem -2.5rem rgba(0, 0, 0, 0.2);
 
     &__cover {
         position: relative;
@@ -66,8 +67,6 @@
                     cursor: pointer;
                 }
             }
-
-
 
             &__content {
                 max-height: 0;
