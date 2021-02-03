@@ -1,14 +1,32 @@
 .card {
-    position: relative;
-    max-width: 20.4375rem;
-    margin: 0 1.5rem;
+    position:relative;
+    max-width: 20.375rem;
+    margin: 9.25rem 1.5rem auto 1.5rem;
     background-color: white;
-    padding: 3rem 1.5rem;
+    padding: 2.375rem 1.5rem 3rem 1.5rem;
     border-radius: 1.25rem;
+    
 
 
     &__cover {
+        position: relative;
         height: 6.25rem;
+        text-align: center;
+
+        &__background {
+            position: absolute;
+            width: 14.875rem;
+
+            bottom: 2rem;
+            right: 1.375rem;
+        }
+
+        &__illustration {
+            position: absolute;
+            width: 16.625rem;
+            bottom: 3.125rem;
+            right: 1.375rem;         
+        }
     }
 
     &__heading {

@@ -29,22 +29,35 @@ body {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .card {
   position: relative;
-  max-width: 20.4375rem;
-  margin: 0 1.5rem;
+  max-width: 20.375rem;
+  margin: 9.25rem 1.5rem auto 1.5rem;
   background-color: white;
-  padding: 3rem 1.5rem;
+  padding: 2.375rem 1.5rem 3rem 1.5rem;
   border-radius: 1.25rem;
 }
 
 .card__cover {
+  position: relative;
   height: 6.25rem;
+  text-align: center;
+}
+
+.card__cover__background {
+  position: absolute;
+  width: 14.875rem;
+  bottom: 2rem;
+  right: 1.375rem;
+}
+
+.card__cover__illustration {
+  position: absolute;
+  width: 16.625rem;
+  bottom: 3.125rem;
+  right: 1.375rem;
 }
 
 .card__heading {
