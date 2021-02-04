@@ -20,23 +20,16 @@
     }
 
     &::before {
-    //     content: '';
-    //     position: absolute;
-    //     right: 42px;
-    //     height: 106px;
-    //     width: 240px;
-    //     top: 0rem;
-    //    // background-image: url('/images/bg-pattern-mobile.svg');
-    //     background-repeat: no-repeat;
+
         
         @include breakpoint-up(desktop) {
             content: '';
             position: absolute;
             background-image: url('/images/illustration-box-desktop.svg');
-            height: 182px;
-            width: 190px;
-            left: -93px;
-            top: 207px;
+            height: 11.375rem;
+            width: 11.875rem;
+            left: -5.8125rem;
+            top: 12.9375rem;
             z-index: 5;
         }
     }
@@ -44,23 +37,22 @@
     &::after {
         content: '';
         position: absolute;
-        top: -107px;
-        right: 38px;
-        width: 272px;
-        height: 188px;
+        top: -6.6875rem;
+        right: 2.375rem;
+        width: 17rem;
+        height: 11.75rem;
         background-image: url('/images/illustration-woman-online-mobile.svg');
         background-repeat: no-repeat;
         z-index: 10;
 
         @include breakpoint-up(desktop) {
-            position: absolute;
-            width: 485px;
-            height: 361px;
-            top: 72px;
-            left: 0px;            
+            width: 30.3125rem;
+            height: 22.5625rem;
+            top: 4.5rem;
+            left: 0;            
             background-image: url('/images/illustration-woman-online-desktop.svg');
             background-repeat: no-repeat;
-            background-position: -85px center;
+            background-position: -5.3125rem center;
             z-index: 4;
         }
     }
@@ -70,9 +62,9 @@
         height: 8.625rem;
         padding-bottom: 2.375rem;
         background-image: url('/images/bg-pattern-mobile.svg');
-        background-size: 240px 106px;
+        background-size: 15rem 6.625rem;
         background-repeat: no-repeat;
-        background-position: center -3px;
+        background-position: center -0.1875rem;
         overflow: hidden;
 
         @include breakpoint-up(desktop) {
@@ -110,7 +102,7 @@
 
         @include breakpoint-up(desktop) {
             text-align: left;
-            font-size: 36px;
+            font-size: $font-xl;
             padding-bottom: 2.375rem;
         }
     }
@@ -136,11 +128,12 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                padding-bottom: 0.875rem;
+                padding-bottom: 1rem;
                 transition: color 200ms ease-in-out, font-weight 300ms ease-in-out;
 
-                @include breakpoint-down(mobile) {
-                    padding-bottom: 1rem;
+                @include breakpoint-up(desktop) {
+                    font-size: $font-med;
+                    padding-bottom: 0.875rem;
                 }
 
                 .toggle{
