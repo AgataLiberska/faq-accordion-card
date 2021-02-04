@@ -1,4 +1,5 @@
-const accordions = document.querySelectorAll('.card__accordion__item')
+const accordions = document.querySelectorAll('.card__accordion__item__title')
+
 
 accordions.forEach(accordion => {
     accordion.addEventListener('click', () => {
