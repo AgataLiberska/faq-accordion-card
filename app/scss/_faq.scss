@@ -76,22 +76,6 @@
             background-position: -36rem -18.375rem;
         }
 
-
-        &__illustration {
-            // position: absolute;
-            // width: 16.625rem;
-            // bottom: 3.125rem;
-            // right: 1.375rem;  
-            
-            @include breakpoint-up(desktop) {
-                position: absolute;
-                height: 22.5rem;
-                width: 29.5625rem;
-                top: 4.5rem;
-                right: 3.625rem;
-
-            }
-        }
     }
 
     &__heading {
@@ -128,7 +112,14 @@
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
+                width: 100%;
+                background: transparent;
+                border: none;
                 padding-bottom: 1rem;
+                padding-left: 0;
+                padding-right: 0;
+                font-size: inherit;
+                font-family: inherit;
                 transition: color 200ms ease-in-out, font-weight 300ms ease-in-out;
 
                 @include breakpoint-up(desktop) {
@@ -147,11 +138,16 @@
                     color: $softRed;
                     cursor: pointer;
                 }
+
+                &:focus {
+                    outline: none;
+                }
             }
 
             &__content {
                 max-height: 0;
                 overflow: hidden;
+                line-height: 1.5;
                 transition: all 300ms linear;
             }
 
