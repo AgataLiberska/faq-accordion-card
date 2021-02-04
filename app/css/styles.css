@@ -117,16 +117,6 @@ body {
   }
 }
 
-@media (min-width: 90rem) {
-  .card__cover__illustration {
-    position: absolute;
-    height: 22.5rem;
-    width: 29.5625rem;
-    top: 4.5rem;
-    right: 3.625rem;
-  }
-}
-
 .card__heading {
   margin: 0;
   padding-bottom: 2.25rem;
