@@ -1,6 +1,6 @@
 .card {
     position:relative;
-    max-width: 20.375rem;
+    width: 20.375rem;
     margin: 9.25rem 1.5rem auto 1.5rem;
     background-color: white;
     padding: 2.375rem 1.5rem 3rem 1.5rem;
@@ -9,15 +9,54 @@
         0 2.5rem 2.8125rem -1.875rem rgba(0, 0, 0, 0.14), 
         0 3.625rem 3.125rem -2.5rem rgba(0, 0, 0, 0.2);
 
+    @include breakpoint-up(desktop) {
+        display: flex;
+        justify-content: space-between;
+        width: 57.5rem;
+        height: 31.75rem;
+        margin-top: 9.125rem;
+        padding: 0;
+        
+    }
+
+    &::before {
+
+        
+
+        @include breakpoint-up(desktop) {
+            content: '';
+            position: absolute;
+            background-image: url('/images/illustration-box-desktop.svg');
+            height: 182px;
+            width: 190px;
+            left: -92px;
+            top: 210px;
+            z-index: 5;
+        }
+
+        }
+
+
     &__cover {
         position: relative;
+        flex-basis: 1;
         height: 6.25rem;
         text-align: center;
+        overflow: hidden;
+
+        @include breakpoint-up(desktop) {
+            height: 100%;
+            width: 28.125rem;
+            background-image: url('/images/bg-pattern-desktop.svg');
+            background-size: 215%;
+            background-repeat: no-repeat;
+            background-position: -36rem -18.375rem;
+        }
+
 
         &__background {
             position: absolute;
             width: 14.875rem;
-
             bottom: 2rem;
             right: 1.375rem;
         }
@@ -26,7 +65,16 @@
             position: absolute;
             width: 16.625rem;
             bottom: 3.125rem;
-            right: 1.375rem;         
+            right: 1.375rem;  
+            
+            @include breakpoint-up(desktop) {
+                position: absolute;
+                height: 22.5rem;
+                width: 29.5625rem;
+                top: 4.5rem;
+                right: 3.625rem;
+
+            }
         }
     }
 
@@ -35,9 +83,21 @@
         padding-bottom: 2.25rem;
         font-size: $font-lg;
         text-align: center;
+
+        @include breakpoint-up(desktop) {
+            text-align: left;
+            padding-bottom: 2.375rem;
+        }
     }
 
+
     &__accordion {
+
+        @include breakpoint-up(desktop) {
+            flex-basis: 1;
+            width: 27.875rem;
+            padding: 4.5rem 6rem 5.125rem 0;
+        }
 
 
         &__item {
@@ -54,6 +114,10 @@
                 align-items: center;
                 padding-bottom: 0.875rem;
                 transition: color 200ms ease-in-out, font-weight 300ms ease-in-out;
+
+                @include breakpoint-down(mobile) {
+                    padding-bottom: 1rem;
+                }
 
                 .toggle{
                     display: inline-block;

@@ -26,3 +26,15 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.hide-for-desktop {
+    @include breakpoint-up(desktop) {
+        display: none;
+    }
+}
+
+.hide-for-mobile {
+    @include breakpoint-down(mobile) {
+        display: none;
+    }
+}
