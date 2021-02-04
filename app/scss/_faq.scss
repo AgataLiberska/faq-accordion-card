@@ -20,9 +20,15 @@
     }
 
     &::before {
-
+        content: '';
+        position: absolute;
+        right: 42px;
+        height: 106px;
+        width: 240px;
+        top: 0rem;
+        background-image: url('/images/bg-pattern-mobile.svg');
+        background-repeat: no-repeat;
         
-
         @include breakpoint-up(desktop) {
             content: '';
             position: absolute;
@@ -33,9 +39,23 @@
             top: 210px;
             z-index: 5;
         }
+    }
 
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 400px;
+        right: 43px;
+        width: 16.625rem;
+        height: 11.5rem;
+        background-image: url('/images/illustration-woman-online-mobile.svg');
+        background-repeat: no-repeat;
+        z-index: 10;
+
+        @include breakpoint-up(desktop) {
+            display: none;
         }
-
+    }
 
     &__cover {
         position: relative;
@@ -51,14 +71,6 @@
             background-size: 215%;
             background-repeat: no-repeat;
             background-position: -36rem -18.375rem;
-        }
-
-
-        &__background {
-            position: absolute;
-            width: 14.875rem;
-            bottom: 2rem;
-            right: 1.375rem;
         }
 
         &__illustration {

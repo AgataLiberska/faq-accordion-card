@@ -69,6 +69,17 @@ body {
   }
 }
 
+.card::before {
+  content: '';
+  position: absolute;
+  right: 42px;
+  height: 106px;
+  width: 240px;
+  top: 0rem;
+  background-image: url("/images/bg-pattern-mobile.svg");
+  background-repeat: no-repeat;
+}
+
 @media (min-width: 90rem) {
   .card::before {
     content: '';
@@ -79,6 +90,24 @@ body {
     left: -92px;
     top: 210px;
     z-index: 5;
+  }
+}
+
+.card::after {
+  content: '';
+  position: absolute;
+  bottom: 400px;
+  right: 43px;
+  width: 16.625rem;
+  height: 11.5rem;
+  background-image: url("/images/illustration-woman-online-mobile.svg");
+  background-repeat: no-repeat;
+  z-index: 10;
+}
+
+@media (min-width: 90rem) {
+  .card::after {
+    display: none;
   }
 }
 
@@ -100,13 +129,6 @@ body {
     background-repeat: no-repeat;
     background-position: -36rem -18.375rem;
   }
-}
-
-.card__cover__background {
-  position: absolute;
-  width: 14.875rem;
-  bottom: 2rem;
-  right: 1.375rem;
 }
 
 .card__cover__illustration {
