@@ -12,10 +12,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Kumbh Sans', sans-serif;
-    font-size: $font-med;
+    font-size: $font-sm;
     line-height: 1.15;
-    //overflow-x: hidden;
-
     background: linear-gradient($softViolet, $softBlue);
     background-repeat: no-repeat;
 }
