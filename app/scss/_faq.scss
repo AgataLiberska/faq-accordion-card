@@ -141,6 +141,12 @@
 
                 &:focus {
                     outline: none;
+                    color: $softRed;
+                    text-decoration: underline;
+                }
+
+                &:active {
+                    transform: scale(1.03);
                 }
 
                 &.open { 

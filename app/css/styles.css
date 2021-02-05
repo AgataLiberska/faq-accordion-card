@@ -193,6 +193,13 @@ body {
 
 .card__accordion__item__title:focus {
   outline: none;
+  color: #f47c57;
+  text-decoration: underline;
+}
+
+.card__accordion__item__title:active {
+  -webkit-transform: scale(1.03);
+          transform: scale(1.03);
 }
 
 .card__accordion__item__title.open {
