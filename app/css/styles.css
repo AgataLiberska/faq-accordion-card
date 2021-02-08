@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +42,7 @@ body {
           box-shadow: 0 2.5rem 2.8125rem -1.875rem rgba(0, 0, 0, 0.14), 0 3.625rem 3.125rem -2.5rem rgba(0, 0, 0, 0.2);
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 60rem) {
   .card {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -57,7 +57,7 @@ body {
   }
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 60rem) {
   .card::before {
     content: '';
     position: absolute;
@@ -82,7 +82,7 @@ body {
   z-index: 10;
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 60rem) {
   .card::after {
     width: 30.3125rem;
     height: 22.5625rem;
@@ -106,7 +106,7 @@ body {
   overflow: hidden;
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 60rem) {
   .card__cover {
     height: 100%;
     width: 28.125rem;
@@ -124,7 +124,7 @@ body {
   text-align: center;
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 60rem) {
   .card__heading {
     text-align: left;
     font-size: 2.25rem;
@@ -132,7 +132,7 @@ body {
   }
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 60rem) {
   .card__accordion {
     width: 27.875rem;
     padding: 4.5rem 6rem 5.125rem 0;
@@ -169,7 +169,7 @@ body {
   transition: color 200ms ease-in-out, font-weight 300ms ease-in-out;
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 60rem) {
   .card__accordion__item__title {
     font-size: 0.875rem;
     padding-bottom: 0.875rem;
