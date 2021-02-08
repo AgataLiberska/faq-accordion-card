@@ -9,6 +9,13 @@
         0 2.5rem 2.8125rem -1.875rem rgba(0, 0, 0, 0.14), 
         0 3.625rem 3.125rem -2.5rem rgba(0, 0, 0, 0.2);
 
+    @include breakpoint-up(tablet) {
+        width: 33rem;
+        margin: auto;
+        margin-top: 9.25rem;
+        padding: 0 3.5rem 3.5rem 3.5rem;
+    }
+
     @include breakpoint-up(desktop) {
         display: flex;
         justify-content: space-between;
@@ -44,6 +51,10 @@
         background-image: url('/images/illustration-woman-online-mobile.svg');
         background-repeat: no-repeat;
         z-index: 10;
+
+        @include breakpoint-up(tablet) {
+            right: 8.75rem;
+        }
 
         @include breakpoint-up(desktop) {
             width: 30.3125rem;
@@ -120,6 +131,7 @@
                 padding-right: 0;
                 font-size: inherit;
                 font-family: inherit;
+                text-align: left;
                 transition: color 200ms ease-in-out, font-weight 300ms ease-in-out;
 
                 @include breakpoint-up(desktop) {
@@ -129,6 +141,7 @@
 
                 .toggle{
                     display: inline-block;
+                    padding-left: 0.25rem;
                     text-align: center;
                     vertical-align: middle;
                     transition: transform 300ms ease-in-out;
