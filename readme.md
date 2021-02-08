@@ -1,6 +1,6 @@
 # Frontend Mentor - FAQ Accordion Card
 
-![Design preview for the Profile card component coding challenge](./design/desktop-preview.jpg)
+![Design preview for the FAQ Accordion card component coding challenge](./images/desktop-preview.jpg)
 
 ## Goal
 
