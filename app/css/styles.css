@@ -31,6 +31,10 @@ body {
           justify-content: center;
 }
 
+.simplebar-scrollbar::before {
+  background-color: #787887;
+}
+
 .card {
   position: relative;
   width: 20.375rem;
@@ -150,7 +154,16 @@ body {
 @media (min-width: 66rem) {
   .card__accordion {
     width: 27.875rem;
-    padding: 4.5rem 6rem 5.125rem 0;
+    padding: 4.5rem 4rem 5.125rem 0;
+  }
+}
+
+@media (min-width: 66rem) {
+  .card__accordion__content {
+    max-height: 18.75rem;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-right: 2rem;
   }
 }
 
@@ -214,11 +227,6 @@ body {
   text-decoration: underline;
 }
 
-.card__accordion__item__title:active {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
-}
-
 .card__accordion__item__title.open {
   font-weight: 700;
 }
@@ -226,16 +234,18 @@ body {
 .card__accordion__item__title.open .toggle {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  padding-left: 0;
+  padding-right: 0.25rem;
 }
 
-.card__accordion__item__title.open + .card__accordion__item__content {
+.card__accordion__item__title.open + .card__accordion__item__copy {
   padding-bottom: 1.25rem;
   max-height: -webkit-max-content;
   max-height: -moz-max-content;
   max-height: max-content;
 }
 
-.card__accordion__item__content {
+.card__accordion__item__copy {
   max-height: 0;
   overflow: hidden;
   line-height: 1.5;

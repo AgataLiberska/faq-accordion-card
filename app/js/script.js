@@ -7,14 +7,14 @@ accordions.forEach(accordion => {
             accordion.classList.remove('open')
         }
         else {
-            closeAccordions()
+            //closeAccordions()
             accordion.classList.add('open')
         }
     })
 })
 
-function closeAccordions() {
-    accordions.forEach(accordion => {
-        accordion.classList.remove('open')
-    })
-}
+// function closeAccordions() {
+//     accordions.forEach(accordion => {
+//         accordion.classList.remove('open')
+//     })
+// }

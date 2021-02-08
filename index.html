@@ -7,6 +7,10 @@
   <title>Frontend Mentor | FAQ Accordion Card</title>
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css"
+/>
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
   
@@ -28,53 +32,56 @@
 
       <div class="card__accordion">
         <h1 class="card__heading">FAQ</h1>
-        <div class="card__accordion__item">
-          <button class="card__accordion__item__title">
-            <span>How many team members can I invite?</span>
-            <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
-          </button>
-          <div class="card__accordion__item__content">
-            <span>You can invite up to 2 additional users on the Free plan. There is no limit on 
-              team members for the Premium plan.</span>
+        <div class="card__accordion__content" data-simplebar data-simplebar-auto-hide="false">
+          <div class="card__accordion__item">
+            <button class="card__accordion__item__title">
+              <span>How many team members can I invite?</span>
+              <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
+            </button>
+            <div class="card__accordion__item__copy">
+              <span>You can invite up to 2 additional users on the Free plan. There is no limit on 
+                team members for the Premium plan.</span>
+            </div>
+          </div>
+          <div class="card__accordion__item">
+            <button class="card__accordion__item__title">
+              <span>What is the maximum file upload size?</span>
+              <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
+            </button>
+            <div class="card__accordion__item__copy">
+              <span>No more than 2GB. All files in your account must fit your allotted storage space.</span>
+            </div>
+          </div>
+          <div class="card__accordion__item">
+            <button class="card__accordion__item__title">
+              <span>How do I reset my password?</span>
+              <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
+            </button>
+            <div class="card__accordion__item__copy">
+              <span>Click “Forgot password” from the login page or “Change password” from your profile page.
+                A reset link will be emailed to you.</span>
+            </div>
+          </div>
+          <div class="card__accordion__item">
+            <button class="card__accordion__item__title">
+              <span>Can I cancel my subscription?</span>
+              <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
+            </button>
+            <div class="card__accordion__item__copy">
+              <span>Yes! Send us a message and we’ll process your request no questions asked.</span>
+            </div>
+          </div>
+          <div class="card__accordion__item">
+            <button class="card__accordion__item__title">
+              <span>Do you provide additional support?</span>
+              <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
+            </button>
+            <div class="card__accordion__item__copy">
+              <span>Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
+            </div>
           </div>
         </div>
-        <div class="card__accordion__item">
-          <button class="card__accordion__item__title">
-            <span>What is the maximum file upload size?</span>
-            <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
-          </button>
-          <div class="card__accordion__item__content">
-            <span>No more than 2GB. All files in your account must fit your allotted storage space.</span>
-          </div>
-        </div>
-        <div class="card__accordion__item">
-          <button class="card__accordion__item__title">
-            <span>How do I reset my password?</span>
-            <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
-          </button>
-          <div class="card__accordion__item__content">
-            <span>Click “Forgot password” from the login page or “Change password” from your profile page.
-              A reset link will be emailed to you.</span>
-          </div>
-        </div>
-        <div class="card__accordion__item">
-          <button class="card__accordion__item__title">
-            <span>Can I cancel my subscription?</span>
-            <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
-          </button>
-          <div class="card__accordion__item__content">
-            <span>Yes! Send us a message and we’ll process your request no questions asked.</span>
-          </div>
-        </div>
-        <div class="card__accordion__item">
-          <button class="card__accordion__item__title">
-            <span>Do you provide additional support?</span>
-            <span class="toggle"><img src="/images/icon-arrow-down.svg" alt="faq toggle"></span>
-          </button>
-          <div class="card__accordion__item__content">
-            <span>Chat and email support is available 24/7. Phone lines are open during normal business hours.</span>
-          </div>
-        </div>
+        
       </div>
 
     </div>
@@ -84,6 +91,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.min.js"></script>
   <script src="app/js/script.js"></script>
 </body>
 </html>
