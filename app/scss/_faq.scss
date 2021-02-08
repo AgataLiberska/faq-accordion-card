@@ -184,7 +184,7 @@
                         }
                     
                 
-                    & + .card__accordion__item__content {
+                    & + .card__accordion__item__copy {
                         padding-bottom: 1.25rem;
                         max-height: max-content;
                     }
@@ -192,7 +192,7 @@
                 }
             }
 
-            &__content {
+            &__copy {
                 max-height: 0;
                 overflow: hidden;
                 line-height: 1.5;
