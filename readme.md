@@ -28,4 +28,4 @@ Thanks to the feedback from mentors and my own research, I learnt a lot about ma
 
 ## Feedback
 
-Feedback is always welcome! If you have any comments at all, please let me know liberska[at]gmail[dot]com
+Feedback is always welcome! If you have any comments at all, [please let me know](mailto:liberska@gmail.com?subject=[GitHub]%20FAQ%20Accordion%20Card)
