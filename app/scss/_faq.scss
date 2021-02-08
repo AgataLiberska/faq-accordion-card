@@ -114,7 +114,7 @@
 
             @include breakpoint-up(desktop) {
                 max-height: 18.75rem;
-                overflow: scroll;
+                overflow: auto;
                 overflow-x: hidden;
                 padding-right: 2rem;
             }

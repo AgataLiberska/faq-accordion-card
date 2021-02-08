@@ -161,7 +161,7 @@ body {
 @media (min-width: 66rem) {
   .card__accordion__content {
     max-height: 18.75rem;
-    overflow: scroll;
+    overflow: auto;
     overflow-x: hidden;
     padding-right: 2rem;
   }
