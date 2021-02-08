@@ -26,3 +26,7 @@ body {
     display: flex;
     justify-content: center;
 }
+
+.simplebar-scrollbar::before{ 
+    background-color: $darkGrayishBlue;
+}
