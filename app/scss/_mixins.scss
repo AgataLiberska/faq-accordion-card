@@ -1,8 +1,8 @@
-//breakpoint - 1440px and larger
-$breakpoints-up: ("desktop" : "90rem");
+//breakpoint -704px, 1056px and larger
+$breakpoints-up: ("tablet": "44rem", "desktop" : "66rem");
 
-//breakpoints - 1439px and below
-$breakpoints-down: ("mobile": "89.9375rem");
+//breakpoints - 959px and below
+$breakpoints-down: ("mobile": "59.9375rem");
 
 @mixin breakpoint-up($size) {
     @media (min-width: map-get($breakpoints-up, $size )) {
